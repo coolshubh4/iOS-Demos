@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TextFieldChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Zip codes here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hcm-T0-qxo">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I0g-31-0Kf">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KPb-gP-Q4V">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UeM-B3-gyZ">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleTextEditor:" destination="vXZ-lx-hvc" eventType="valueChanged" id="o7y-AB-uJg"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="I0g-31-0Kf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="4b5-tS-ljR"/>
+                            <constraint firstItem="KPb-gP-Q4V" firstAttribute="top" secondItem="Hcm-T0-qxo" secondAttribute="bottom" constant="31" id="AbK-3L-yTj"/>
+                            <constraint firstItem="Hcm-T0-qxo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="FiE-KF-mai"/>
+                            <constraint firstItem="UeM-B3-gyZ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Fli-Lt-Imw"/>
+                            <constraint firstItem="UeM-B3-gyZ" firstAttribute="leading" secondItem="I0g-31-0Kf" secondAttribute="trailing" constant="64" id="LM2-KZ-nEr"/>
+                            <constraint firstItem="KPb-gP-Q4V" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="MGy-TU-YaI"/>
+                            <constraint firstItem="I0g-31-0Kf" firstAttribute="top" secondItem="KPb-gP-Q4V" secondAttribute="bottom" constant="31" id="Phs-cD-vRp"/>
+                            <constraint firstItem="KPb-gP-Q4V" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Sua-7f-XEX"/>
+                            <constraint firstItem="Hcm-T0-qxo" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="TnP-4e-Unp"/>
+                            <constraint firstItem="UeM-B3-gyZ" firstAttribute="top" secondItem="KPb-gP-Q4V" secondAttribute="bottom" constant="31" id="apt-IY-65g"/>
+                            <constraint firstItem="Hcm-T0-qxo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="vk8-ey-D6i">
+                                <variation key="widthClass=compact" constant="19"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Hcm-T0-qxo"/>
+                                <exclude reference="I0g-31-0Kf"/>
+                                <exclude reference="KPb-gP-Q4V"/>
+                                <exclude reference="UeM-B3-gyZ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="FiE-KF-mai"/>
+                                <exclude reference="TnP-4e-Unp"/>
+                                <exclude reference="vk8-ey-D6i"/>
+                                <exclude reference="4b5-tS-ljR"/>
+                                <exclude reference="Phs-cD-vRp"/>
+                                <exclude reference="AbK-3L-yTj"/>
+                                <exclude reference="MGy-TU-YaI"/>
+                                <exclude reference="Sua-7f-XEX"/>
+                                <exclude reference="Fli-Lt-Imw"/>
+                                <exclude reference="LM2-KZ-nEr"/>
+                                <exclude reference="apt-IY-65g"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Hcm-T0-qxo"/>
+                                <include reference="I0g-31-0Kf"/>
+                                <include reference="KPb-gP-Q4V"/>
+                                <include reference="UeM-B3-gyZ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="FiE-KF-mai"/>
+                                <include reference="TnP-4e-Unp"/>
+                                <include reference="vk8-ey-D6i"/>
+                                <include reference="4b5-tS-ljR"/>
+                                <include reference="Phs-cD-vRp"/>
+                                <include reference="AbK-3L-yTj"/>
+                                <include reference="MGy-TU-YaI"/>
+                                <include reference="Sua-7f-XEX"/>
+                                <include reference="Fli-Lt-Imw"/>
+                                <include reference="LM2-KZ-nEr"/>
+                                <include reference="apt-IY-65g"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textField1" destination="Hcm-T0-qxo" id="Lr4-GU-YBs"/>
+                        <outlet property="textField2" destination="KPb-gP-Q4V" id="pYi-f9-kt1"/>
+                        <outlet property="textField3" destination="I0g-31-0Kf" id="t2A-r5-n0D"/>
+                        <outlet property="toggleTextField3" destination="UeM-B3-gyZ" id="ndB-EM-6bQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="306"/>
+        </scene>
+    </scenes>
+</document>
